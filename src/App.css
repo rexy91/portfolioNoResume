@@ -216,27 +216,11 @@
   margin-top: 1vh;
   /* margin-left:3vh; */
   /* height: 110%; */
-  height: 45vh;
+  height: 40vh;
   /* background-color: #423c3c; */
   /* height:40vh; */
-  margin-bottom: 0;
+  margin-bottom: -1vh;
   background: linear-gradient(to right, #f5ebeb, #e2d6d6, #e2e0e4); 
-}
-
-#aboutSecondColumn{
-  /* background-color: #423c3c; */
-  height:42vh;
-  /* margin-top: 7vh; */
-  /* height: 150%; */
-  margin-bottom: 0;
-  background: linear-gradient(to right, #e2e0e4, #e2d6d6,#f5ebeb ); 
-}
-
-#aboutSecondColumn h3 {
-  padding: 3%;
-  font-size: 45px;
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #aboutFirstColumn h3 {
@@ -244,16 +228,6 @@
   font-size: 45px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#aboutSecondColumn p {
-    /* text-align: center; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.4;
-    margin:auto;
-    width: 60vw;
-    font-size: 18px;
-    /* color:white; */
 }
 
 #aboutFirstColumn p {
@@ -266,6 +240,55 @@
   /* color:white; */
 }
 
+#aboutSecondColumn p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  font-weight: lighter;
+  padding: 5px;
+  /* margin:auto; */
+  /* width: 60vw; */
+  font-size: 18px;
+}
+
+#aboutSecondColumn{
+  /* background-color: #423c3c; */
+  height:50vh;
+  /* margin-top: 7vh; */
+  /* height: 150%; */
+  text-align: center;
+  /* margin-bottom: 0; */
+  background: linear-gradient(to right, #e2e0e4, #e2d6d6,#f5ebeb ); 
+}
+#aboutSecondColumn img{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+
+#skillsContainer img{
+    width: 10%;
+}
+
+#skillDiv1{
+  display: inline-block;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+#skillDiv2{
+  margin-top: 2%;
+  display: inline-block;
+}
+
+
+.skillLogos{
+  height: 50vh;
+}
+#skillsText{
+  height: 10vh;
+  height: 100%;
+}
+
 /* These CSS will apply as long as the screen size is less than  768px. */
 @media(max-width: 768px ){
   #aboutFirstColumn{
@@ -275,9 +298,19 @@
   }
 }
 
+@media(max-width: 768px) {
+  #aboutSecondColumn h2{
+
+  }
+}
+
 @media(max-width: 768px ){
   #aboutSecondColumn{
       margin: 2vh;
-      margin-top: -5vh;
+      margin-top: -6vh;
+      height: 55vh;
+
   }
 }
+
+
