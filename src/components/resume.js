@@ -4,7 +4,6 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 
-
 class Resume extends Component {
   render() {
     return(
@@ -19,11 +18,11 @@ class Resume extends Component {
                  />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Paul Hanna</h2>
-            <h4 style={{color: 'grey'}}>Programmer</h4>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <h2 style={{paddingTop: '2em'}}>Yu Hao Ye</h2>
+            <h4 style={{color: 'grey'}}>Full-stack Developer</h4>
+            <hr style={{borderTop: '3px solid black', width: '50%'}}/>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <hr style={{borderTop: '3px solid black', width: '50%'}}/>
             <h5>Address</h5>
             <p>1 Hacker Way Menlo Park, 94025</p>
             <h5>Phone</h5>
@@ -35,26 +34,8 @@ class Resume extends Component {
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>
-
-
-            <Education
-              startYear={2002}
-              endYear={2006}
-              schoolName="My University"
-              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-               />
-
-               <Education
-                 startYear={2007}
-                 endYear={2009}
-                 schoolName="My 2nd University"
-                 schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                  />
-                <hr style={{borderTop: '3px solid #e22947'}} />
 
               <h2>Experience</h2>
-
             <Experience
               startYear={2009}
               endYear={2012}
@@ -68,9 +49,26 @@ class Resume extends Component {
                 jobName="Second Job"
                 jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                 />
-              <hr style={{borderTop: '3px solid #e22947'}} />
+              <hr style={{borderTop: '3px solid '}} />
               <h2>Skills</h2>
-              <Skills
+              <p style = {{fontSize:'17px'}}>React, Redux, JavaScript, Rails, Ruby, Git, Css, Bootstrap, HTML5, PostgreSQL, Python.</p>
+              <hr style={{borderTop: '3px solid '}} />
+              <h2>Education</h2>
+            <Education
+              startYear={2002}
+              endYear={2006}
+              schoolName="My University"
+              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+               />
+
+               <Education
+                 startYear={2007}
+                 endYear={2009}
+                 schoolName="My 2nd University"
+                 schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  />
+                <hr style={{borderTop: '3px solid '}} />
+              {/* <Skills
                 skill="javascript"
                 progress={100}
                 />
@@ -85,7 +83,7 @@ class Resume extends Component {
                     <Skills
                       skill="React"
                       progress={25}
-                      />
+                      /> */}
 
 
           </Cell>

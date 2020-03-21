@@ -1,13 +1,14 @@
 .header-color {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #833ab4;  
+  background: -webkit-linear-gradient(to right, #14120e, #141111, #0f0e0f); 
+  background: linear-gradient(to right, #13100e, #000000, #000000); 
+  /* background-color: black; */
 }
 
 .landing-grid {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #833ab4;  
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
+  background: linear-gradient(to right, #141414, #5e5757, #656466); 
   text-align: center;
   position: fixed;
   top: 0;
@@ -17,7 +18,7 @@
 }
 
 .projects-grid {
-  display: flex;
+  /* display: flex; */
 }
 
 /* Resume Page css */
@@ -55,6 +56,7 @@
 .contact-grid p {
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
+  
 }
 
 .contact-grid hr {
@@ -77,15 +79,21 @@
 }
 
 .banner-text {
-  background-color: black;
+  /* background-color: black; */
   opacity: .8;
   width: 75%;
   margin: auto;
   border-radius: 10px;
 }
 
-.banner-text h1 {
-  font-size: 66px;
+.banner-text h2 {
+  /* font-size: 66px; */
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text h3 {
+  font-size: 30px;
   font-weight: bold;
   color: white;
 }
@@ -97,9 +105,14 @@
 }
 
 .banner-text p {
+  /* justify-content: center; */
+  /* width: 50%; */
+  text-align: center;
+  margin-left:  10%;
+  margin-right: 10%;
   color: white;
   font-size: 20px;
-  padding: 1em;
+
 }
 
 .social-links {
@@ -111,6 +124,160 @@
 
 .social-links i {
   color: white;
-  font-size: 5em;
+  font-size: 3em;
   padding: 8px;
+}
+
+.projectFront{
+  padding: 10% !important;
+  background-size: 80%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.projectBack{
+  margin: 0 !important;
+  color: white;
+  background: #833ab4;  
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
+  background: linear-gradient(to right, #141414, #5e5757, #656466); 
+  
+}
+
+.projectPage{
+  /* background-color: silver; */
+  height: 100%; 
+  color: white;
+  background: #833ab4;  
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
+  background: linear-gradient(to right, #b9b3b3, #575555, #d4d2d6); 
+}
+
+#aboutmeCell1{
+  height: 50vh;
+  background-color: silver;
+}
+
+#aboutmeCell{
+  height: 50vh;
+  background-color: red;
+}
+
+.projectLinks{
+    color: red;
+}
+
+#card1{
+  text-align: center;
+}
+
+
+
+/* Contact form  */
+#contactform{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+/* target elements inside the #contactform  */
+#contactForm input[type=text], #contactForm textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 6px;
+      /* !!!! Can be resized to screen  */
+      resize: both;
+      margin-bottom: 16px;
+}
+
+#contactForm h3 {
+    text-align: center;
+}
+#contactForm input[type=submit]{
+      background-color: black;
+      color: white;
+      padding: 5px;
+      /* when hover will be icon instead of mouse  */
+      cursor: pointer; 
+      border: none;
+      border-radius: 5px;
+}
+
+/* contactForm Div  */
+#contactformdiv{
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* about page  */
+#aboutFirstColumn{
+  margin-top: 1vh;
+  /* margin-left:3vh; */
+  /* height: 110%; */
+  height: 45vh;
+  /* background-color: #423c3c; */
+  /* height:40vh; */
+  margin-bottom: 0;
+  background: linear-gradient(to right, #f5ebeb, #e2d6d6, #e2e0e4); 
+}
+
+#aboutSecondColumn{
+  /* background-color: #423c3c; */
+  height:42vh;
+  /* margin-top: 7vh; */
+  /* height: 150%; */
+  margin-bottom: 0;
+  background: linear-gradient(to right, #e2e0e4, #e2d6d6,#f5ebeb ); 
+}
+
+#aboutSecondColumn h3 {
+  padding: 3%;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#aboutFirstColumn h3 {
+  padding: 3%;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#aboutSecondColumn p {
+    /* text-align: center; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    margin:auto;
+    width: 60vw;
+    font-size: 18px;
+    /* color:white; */
+}
+
+#aboutFirstColumn p {
+  /* text-align: center; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  margin:auto;
+  width: 60vw;
+  font-size: 18px;
+  /* color:white; */
+}
+
+/* These CSS will apply as long as the screen size is less than  768px. */
+@media(max-width: 768px ){
+  #aboutFirstColumn{
+      margin: 2vh;
+      margin-top: 5vh;
+      height: 60vh;
+  }
+}
+
+@media(max-width: 768px ){
+  #aboutSecondColumn{
+      margin: 2vh;
+      margin-top: -5vh;
+  }
 }

@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 
-
 class Landing extends Component {
   render() {
     return(
-      <div style={{width: '100%', margin: 'auto'}}>
+      <div style={{width: '100%', height:'100%', margin: 'auto'}}>
         <Grid className="landing-grid">
           <Cell col={12}>
-            <img
-              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+            <img style = {{marginBottom:'3%'}}
+              src = 'https://www.flaticon.com/premium-icon/icons/svg/1713/1713968.svg'
               alt="avatar"
               className="avatar-img"
               />
-
             <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
-
+              <h2>Full Stack Web Developer</h2>
             <hr/>
-
-          <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
-
+            <br/>
+          {/* <p>React | Redux | JavaScript | Ruby | Rails | Bootstrap | Css | Git | HTML</p> */}
+        <p>Passionate about coding and problem solving. Possess strong skills in collaborating with team and pair-programming. Seeks to establish a career as Full Stack Developer and keep on learning.</p>
+        
         <div className="social-links">
 
           {/* LinkedIn */}

@@ -1,64 +1,23 @@
-import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+import React, { Component } from 'react'
 
-
-class Contact extends Component {
+export class contact extends Component {
   render() {
-    return(
-      <div className="contact-body">
-        <Grid className="contact-grid">
-          <Cell col={6}>
-            <h2>Paul Hanna</h2>
-            <img
-              src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-              alt="avatar"
-              style={{height: '250px'}}
-               />
-             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-
-          </Cell>
-          <Cell col={6}>
-            <h2>Contact Me</h2>
-            <hr/>
-
-            <div className="contact-list">
-              <List>
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-phone-square" aria-hidden="true"/>
-                    (123) 456-7890
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-fax" aria-hidden="true"/>
-                    (123) 456-7890
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-envelope" aria-hidden="true"/>
-                    someone@example.com
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-skype" aria-hidden="true"/>
-                    MySkypeID
-                  </ListItemContent>
-                </ListItem>
-
-
-              </List>
-            </div>
-          </Cell>
-        </Grid>
+    return (
+      
+      <div id='contactformdiv'>
+      <form id ='contactForm'>
+      <h3>Get In Touch</h3>
+      <label for="fname">Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your name.."/>
+      <label for='email'>Email </label>
+      <input type='text' id='email' placeholder='Your email'/>
+      <label for='message'>Message</label>
+      <textarea id="message" name="message" placeholder='your message ' style= {{height:'200px'}}></textarea>
+      <input type='submit' value='Send Now'/>
+      </form>
       </div>
     )
   }
 }
 
-export default Contact;
+export default contact
