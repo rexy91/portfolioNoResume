@@ -168,12 +168,12 @@
     color: red;
 }
 
-#card1{
-  text-align: center;
+
+@media (max-width:1024px){
+  .cardFront, .cardBack{
+      width: 100vw !important;
+  }
 }
-
-
-
 /* Contact form  */
 #contactform{
   font-family: Arial, Helvetica, sans-serif;
@@ -213,7 +213,7 @@
 
 /* about page  */
 #aboutFirstColumn{
-  margin-top: 1vh;
+  margin-top: 3vh;
   /* margin-left:3vh; */
   /* height: 110%; */
   height: 40vh;
@@ -242,9 +242,9 @@
 
 #aboutSecondColumn p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: lighter;
-  padding: 5px;
+  padding: 3px;
   /* margin:auto; */
   /* width: 60vw; */
   font-size: 18px;
@@ -252,8 +252,8 @@
 
 #aboutSecondColumn{
   /* background-color: #423c3c; */
-  height:50vh;
-  /* margin-top: 7vh; */
+  height:45vh;
+  margin-top: 1vh;
   /* height: 150%; */
   text-align: center;
   /* margin-bottom: 0; */
@@ -313,4 +313,30 @@
   }
 }
 
+#blogPage img{
+    height: 35vh;
+    width: 26vw;
+}
 
+#blogPage {
+  margin-top: 4vh;
+}
+
+
+.blogContainer{
+  text-align: center;
+}
+
+
+@media (max-width: 1024px){
+  #blogPage img{
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+
+@media (max-width: 1024px){
+  #blogPage h4, img{
+    margin: 0 0 0 0 !important;
+  }
+}

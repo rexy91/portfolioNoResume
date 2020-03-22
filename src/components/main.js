@@ -7,12 +7,14 @@ import Contact from './contact';
 import Projects from './projects';
 import Resume from './resume';
 import aboutpage from './aboutpage'
+import Blog from './Blog'
 
 
 const Main = () => (
 
   <Switch>
     <Route exact path="/" component={LandingPage} />
+    <Route exact path = '/blog' component={Blog}/>
     <Route path="/aboutme" component={aboutpage} />
     <Route path="/contact" component={Contact} />
     <Route path="/projects" component={Projects} />

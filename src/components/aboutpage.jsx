@@ -19,6 +19,7 @@ export class aboutpage extends Component {
 
                         <div className = 'ui grid'>
                                     <div className = 'four wide column'>
+                                        
                                     </div>
                                     <div className = 'sixteen wide mobile twelve wide computer column ' id = 'aboutSecondColumn' >  
                                             <h2>Skills</h2>

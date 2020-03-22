@@ -68,7 +68,7 @@ class Projects extends Component {
 
   renderCard1Front = () => {
 
-      return     <Card className = 'card1' onMouseEnter = {this.hoverCardOne1} shadow={5} style={{minWidth: '450', width:"70vw",height:'60vh', margin:'auto', marginBottom:'7vh'}}>
+      return     <Card className = 'cardFront' id ='virtualBankFront' onMouseEnter = {this.hoverCardOne1} shadow={5} style={{minWidth: '450', width:"70vw",height:'60vh', margin:'auto', marginBottom:'7vh'}}>
                       <CardTitle  className = 'projectFront' style={{color: '#fff',height:'450px', backgroundImage: "url(" + bank +")"}} ></CardTitle>
                       <CardText style={{textAlign:'center',padding:'5%', marginLeft:'4vw'}}>
                       A full-stack web based banking application using React and Rails, allows users to sign up for a virtual bank account and perform some transactions, such as transfering funds, making deposit and withdrawal.
@@ -86,7 +86,7 @@ class Projects extends Component {
 }
   renderCard1Back = () => {
 
-    return     <Card className = 'card1' onMouseLeave = {this.hoverCardOne1}  shadow={5} style={{minWidth: '450', width:"70vw",height:'60vh', margin:'auto', marginBottom:'7vh'}}>
+    return     <Card className = 'cardBack'  id = 'virtualBankBack' onMouseLeave = {this.hoverCardOne1}  shadow={5} style={{minWidth: '450', width:"70vw",height:'60vh', margin:'auto', marginBottom:'7vh'}}>
                 <Grid className = 'projectBack' >
                   <Cell col = {12}><h4>Flatiron Virtual Bank</h4></Cell>
                   <Cell  col ={6}>
@@ -115,7 +115,7 @@ class Projects extends Component {
   }
 
   renderCard2Front = () => {
-    return     <Card  onMouseEnter = {this.hoverCardOne2} shadow={5} style={{minWidth: '450', width:"70vw",height:'60vh', margin:'auto', marginBottom:'7vh'}}>
+    return     <Card className='cardFront' onMouseEnter = {this.hoverCardOne2} shadow={5} style={{minWidth: '450', width:"70vw",height:'60vh', margin:'auto', marginBottom:'7vh'}}>
                   <CardTitle  className = 'projectFront' style={{color: '#fff', height: '350px',backgroundImage: "url(" + yourteamtime +")"}} ></CardTitle>
                   <CardText style={{textAlign:'center', padding:'5%', marginLeft:'4vw'}}>
                   A full-stack web application designed to be used by managers. A manager will be able to add/delete companies and employees, create a weekly schedule for the employees which belongs to a particular company that they manage.
@@ -135,7 +135,7 @@ class Projects extends Component {
 
 renderCard2Back = () => {
 
-  return     <Card onMouseLeave = {this.hoverCardOne2}  shadow={5} style={{minWidth: '450', width:"70vw",height:'40vh', margin:'auto', marginBottom:'7vh'}}>
+  return     <Card className='cardBack' onMouseLeave = {this.hoverCardOne2}  shadow={5} style={{minWidth: '450', width:"70vw",height:'40vh', margin:'auto', marginBottom:'7vh'}}>
                   <Grid className = 'projectBack' >
                     <Cell col = {12}><h4>Your Team's Time</h4></Cell>
                     <Cell  col ={6}>
@@ -163,7 +163,7 @@ renderCard2Back = () => {
 
 renderCard3Front = () => {
 
-  return     <Card onMouseEnter = {this.hoverCardOne3} shadow={5} style={{minWidth: '450', width:"70vw",height:'60vh', margin:'auto', marginBottom:'7vh'}}>
+  return     <Card className='cardFront' onMouseEnter = {this.hoverCardOne3} shadow={5} style={{minWidth: '450', width:"70vw",height:'60vh', margin:'auto', marginBottom:'7vh'}}>
                   <CardTitle  className = 'projectFront' style={{color: '#fff', height: '500px',backgroundImage: "url(" + ticketfinder +")"}} ></CardTitle>
                   <CardText style={{textAlign:'center',padding:'5%',marginLeft:'4vw'}} >
                   Built a full-stack application with asynchronous fetches, external API using JavaScript, HTML, and Css. Users can browse upcoming events and add to their personal planner.
@@ -183,7 +183,7 @@ renderCard3Front = () => {
 
 renderCard3Back = () => {
 
-  return     <Card onMouseLeave = {this.hoverCardOne3} shadow={5} style={{minWidth: '450', width:"70vw",height:'40vh', margin:'auto', marginBottom:'7vh'}}>
+  return     <Card className='cardBack' onMouseLeave = {this.hoverCardOne3} shadow={5} style={{minWidth: '450', width:"70vw",height:'40vh', margin:'auto', marginBottom:'7vh'}}>
               <Grid className = 'projectBack' >
                 <Cell col = {12}><h4>TickerFinder</h4></Cell>
                 <Cell  col ={6}>
