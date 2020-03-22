@@ -4,16 +4,21 @@ import railsblog from './blogphotos/railsblog.jpg'
 import bootstrap from './blogphotos/bootstrap.jpg'
 import callbackfunction from './blogphotos/callbackfunction.jpg'
 import binarysearch from './blogphotos/binarysearch.jpg'
+import {withRouter} from 'react-router-dom'
 
 export class Blog extends Component {
+
+    openBlog = () => {
+        
+    }
     render() {
         return (
             <div id = 'blogPage'>
                 <div className = 'ui stackable two column grid'>
 
                     <div className = 'eight wide column blogContainer' >
-                                <h4 style={{marginLeft:'10vw'}}>Active Record Associations</h4>
-                                <img style={{marginLeft:'10vw'}}src={railsblog} alt=""/>                        
+                                <h4 onClick = {this.openBlog} name = 'activeRecord'style={{marginLeft:'10vw'}}>Active Record Associations</h4>
+                                <img onClick = {this.openBlog} name = 'activeRecord' style={{marginLeft:'10vw'}}src={railsblog} alt=""/>                        
                     </div>
                     <div className = 'eight wide column blogContainer' >
                                   <h4 style={{marginRight:'10vw'}}>JavaScript Callback Functions</h4>
@@ -75,4 +80,4 @@ export class Blog extends Component {
     }
 }
 
-export default Blog
+export default withRouter(Blog)
